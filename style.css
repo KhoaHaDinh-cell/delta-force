@@ -1,0 +1,123 @@
+/* Cài đặt chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7faff;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Thanh menu */
+header {
+    background: #164796;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Phần giới thiệu */
+.hero {
+    padding: 60px 8%;
+    min-height: 400px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #ff8b27;
+}
+
+.hero p {
+    color: #cccccc;
+    margin: 20px 0;
+}
+
+/* Nút khám phá */
+.btn {
+    display: inline-block;
+    background: #ff8b27;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Danh mục súng */
+.section {
+    padding: 40px 8%;
+}
+
+.section h2 {
+    color: #ff8b27;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cards article {
+    background: #1f3252;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cards img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.cards h3 {
+    color: #ff8b27;
+    margin-top: 10px;
+}
+
+.cards p {
+    color: #cccccc;
+}
+
+/* Chân trang */
+footer {
+    background: #050911;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Điện thoại */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
+}
